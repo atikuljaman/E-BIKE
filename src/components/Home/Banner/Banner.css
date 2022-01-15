@@ -1,0 +1,109 @@
+.banner-container{
+    position: relative;
+}
+.banner-content{
+    width: 450px;
+    height: 330px;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    padding: 50px 40px;
+}
+.banner-content button{
+    position: absolute;
+    width: 170px;
+    height: 55px;
+    color: white;
+    background-color: #bdb099;
+    border: 1px solid #bdb099;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    top: 91%;
+    left: 15%;
+    transition: 0.3s ease-in-out;
+}
+.banner-content button:hover{
+    background-color: white;
+    color: #bdb099;
+}
+.banner-description{
+    width: 100%;
+    height: 210px;
+    border-left: 5px solid #bdb099;
+    padding-left: 10px;
+}
+.small-text {
+    color: #bdb099;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.sub-heading{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.heading{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.heading span{
+    color: #bdb099;
+}
+
+/* USING MEDIA QUERY FOR RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .banner-container img {
+        height: 355px;
+    }
+    .banner-content{
+        width: 250px;
+        height: auto;
+        background-color: rgba(255,255,255,.9);
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        padding: 30px 20px;
+    }
+    .banner-description{
+        width: 100%;
+        height: 110px;
+        border-left: 2px solid #bdb099;
+        padding-left: 10px;
+    }
+    .small-text {
+        font-weight: 900;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px
+    }
+    .sub-heading{
+        font-size: 20px;
+        margin: 0;
+    }
+    .heading{
+        font-size: 30px;
+        margin: 0;
+    }
+    .banner-content button{
+        width: 120px;
+        height: 40px;
+        color: white;
+        background-color: #bdb099;
+        border: 1px solid #bdb099;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 12px;
+        top: 91%;
+        transition: 0.3s ease-in-out;
+    }
+}
